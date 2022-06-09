@@ -7,22 +7,26 @@
     <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
         <ul class="navbar-nav mr-auto d-flex align-items-center">
             <li class="nav-item active">
-                <img src="../../assets/1653783593137.jpg" alt="Imagem do user" width="50px" height="50px"
+                <img src="{{foto}}}" alt="Imagem do user" width="50px" height="50px"
                 class="img-fluid m-2 rounded-circle">
             </li>
             <li class="nav-item pl-4">
-                <p class="m-0 font-weight-bold text-white fs-16 ">Nome do usuário</p>
+                <p class="m-0 font-weight-bold text-white fs-16 ">{{nome}}</p>
             </li>
 
             <li class="nav-item pl-3">
                 <i class="fa fa-pencil-square" text-white fs-16 aria-hidden="true"></i>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <li class="nav-item pl-4">
-                <a class="m-0 text-white fs-16">Sair<i class="fa fa-times-circle text-white p-2"
-                aria-hidden="true"></i></a>
-            </li>
-        </ul>
+        <div class="ml-auto">
+            <ul class="navbar-nav d-flex align-items-center">
+                <li class="nav-item pl-4">
+                    <a (click)='sair()' class="m-0 font-weigth-bold text-white fs-16 ml-6">Sair <i class="fa fa-sign-out"
+                    aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        
     </div>
 </nav>
